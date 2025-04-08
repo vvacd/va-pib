@@ -20,7 +20,8 @@ def run_query(query):
     rows = [dict(row) for row in rows_raw]
     return rows
 
-rows = run_query("SELECT word FROM `bigquery-public-data.samples.shakespeare` LIMIT 100")
+# rows = run_query("SELECT word FROM `bigquery-public-data.samples.shakespeare` LIMIT 100")
+rows = run_query("SELECT ctgSubjectsS FROM `bq2409.c1_cse.d0_csep_pyqs` LIMIT 1000") 
 
 # Print results.
 st.write("Some wise words from Shakespeare:")
